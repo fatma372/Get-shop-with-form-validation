@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    border: none;
+    outline: none;
+
+    position: relative;
+    box-sizing: border-box;
+    list-style-type: none;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    height: 100svh;
+    max-height: 100svh;
+
+    max-width: 100svw;
+
+
+    padding: 2%;
+    background-image:linear-gradient(rgb(109, 109, 189),rgba(109, 109, 189, 0.285)) ;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.842) ,rgba(109, 109, 189, 0.97)) ; 
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ul{
+    padding: 0px 20px;
+}
+
+form{
+    margin: 3% auto;
+    padding:20px 5%;
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.447) 50%,rgba(109, 109, 189, 0.285)) ; 
+    width: 55%;
+    box-shadow: 0px 0px 10px rgba(230, 228, 228, 0.63);
+}
+label, input[type="submit"]{
+    font-weight: bold;
+    color: white;
+}
+
+.field-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.password-container{
+    flex: 1 ;
+}
+.password2-container{
+    flex: 1 ;
+}
+
+form input[type="text"], input[type="password"]{
+    /* border: 1px solid blue; */
+    padding: 13px ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    background-color: white;
+}
+
+.submit{
+    color: white;
+    background-color: rgb(109, 109, 189);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.submit:hover{
+    background-color:rgb(23, 23, 33);
+}
+input:focus{
+    box-shadow: 0px 0px 10px rgb(109, 109, 189);
+}
+.valid-text{
+    color: rgb(4, 152, 4);
+    
+
+}
+.invalid-text{
+    color:rgb(198, 13, 13);
+}
+
+i{
+    margin-right: 5px;
+}
+
+@media (max-width:660px) {
+    form{
+        width: 90%;
+    }
+    
+}

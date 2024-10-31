@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validator</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.all.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <div class="firstname-container field-container">
+            <label for="firstname"> First name: </label>
+            <input type="text" id="firstname" name="firstname" class="firstname" placeholder="enter you firstname"> 
+            <ul class="output">
+            </ul>
+        </div>
+        <div class="lastname-container field-container">
+            <label for="lastname"> Last name: </label>
+            <input type="text" id="lastname" name="lastname" class="lastname" placeholder="enter you lastname">
+            <ul class="output">
+            </ul>
+        </div>
+        <div class="phone-container field-container">
+            <label for="phone"> Phone number: </label>
+            <input type="text" id="phone" name="phone" class="phone" placeholder="enter you phone">
+            <ul class="output">
+            </ul>
+        </div>
+        <div class="birthdate-container field-container">
+            <label for="birthdate"> Birth date: </label>
+            <input type="text" id="birthdate" name="birthdate" class="birthdate" placeholder="enter you birthdate">
+            <ul class="output">
+            </ul>
+        </div>
+        <div class="email-container field-container">
+            <label for="email"> Email: </label>
+            <input type="text" id="email" name="email" class="email" placeholder="enter you email">
+            <ul class="output">
+            </ul>
+        </div>
+        <div class="password-container">
+            <div class="password-container field-container">
+                <label for="password"> Password: </label>
+                <input type="password" id="password" name="password" class="password" placeholder="enter you password">
+                <ul class="output">
+                </ul>
+            </div>
+    
+            <div class="password2-container field-container">
+                <label for="password">Confirm password: </label>
+                <input type="password" id="password2" name="password2" class="password2" placeholder="confirm your password">
+                <ul class="output">
+                </ul>
+            </div>
+        </div>
+
+       <input class="submit" type="submit" value="submit">
+    </form>
+    <script src="./form.js"></script>
+</body>
+
+</html>
