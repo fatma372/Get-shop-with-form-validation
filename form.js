@@ -146,7 +146,7 @@ form.addEventListener("submit",(e)=>{
             title: "Signed in successfully"
           });
 
-          window.location.href="./GetShop.html"
+          window.location.replace("GetShop.html")
     }else{
         Swal.fire({
             icon: "error",
